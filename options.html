@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Airbnb Multi-Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* background-image: linear-gradient(black, white); */
+      /* background-image: url("./icons/icon128.png"); */
+    }
+    h2 {
+      margin: 0;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+    }
+    #searchFields {
+      padding: 10px;
+    }
+    .searchGroup {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .searchGroup input {
+      margin-right: 10px;
+    }
+    #results {
+      padding: 10px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    label {
+      margin: 10px;
+    }
+    select {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Airbnb Multi-Search</h2>
+  <img src="./icons/icon128.png" alt="" srcset="">
+  <div id="searchFields">
+    <div class="searchGroup">
+      <input type="text" class="location" placeholder="Location">
+      <input type="date" class="checkIn">
+      <input type="date" class="checkOut">
+      <label for="flexible_date_search">flexible_date_search</label>
+       <select name="flexible_date_search" id="flexible_date_search">
+        <option value=false >false</option>
+        <option value=0 >1</option>
+        <option value=1 >2</option>
+       </select>
+    </div>
+  </div>
+  <button id="addSearch">Add Another Search</button>
+  <button id="search">Search</button>
+  <button id="next">Next Page</button>
+  <!-- <button id="prev">Previous Page</button> -->
+
+   <label for="closeTabs">Close Tabs</label>
+   <input type="radio" value="true" id="closeTabs" name="closeTabs" checked>
+
+  <!-- <label for="searchType">Search Type</label>
+  <select name="searchType" id="searchType">
+    <option value="homes" selected>homes</option>
+    <option value="experiences">experiences</option>
+  </select>
+   -->
+
+   <label for="removeDuplicatesAcrossPages">Remove Duplicates Across Pages (not implemented)</label>
+    <input type="radio" value="true" id="removeDuplicatesAcrossPages" name="removeDuplicatesAcrossPages" >
+  <div id="results"></div>
+  <script src="options.js"></script>
+</body>
+</html>

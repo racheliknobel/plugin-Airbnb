@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Airbnb Multi-Date Search</title>
+    <style>
+      body { font-family: Arial, sans-serif; }
+      .container { margin: 10px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Airbnb Multi-Date Search</h3>
+      <form id="searchForm">
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location"><br><br>
+        <label for="dates">Dates (comma separated):</label><br>
+        <input type="text" id="dates" name="dates"><br><br>
+        <button type="submit">Search</button>
+      </form>
+      <div id="results"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
